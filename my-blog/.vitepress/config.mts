@@ -43,7 +43,7 @@ export default defineConfig({
     [
       "script",
       {},
-      `<script>
+      `
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
@@ -51,7 +51,7 @@ export default defineConfig({
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-        </script>`,
+        `,
     ],
   ],
 });
