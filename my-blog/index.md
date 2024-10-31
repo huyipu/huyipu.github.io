@@ -3,23 +3,45 @@
 layout: home
 
 hero:
-  name: "测试博客"
-  text: "我的测试博客"
-  tagline: My great project tagline
+  image:
+    src: /logo.svg
+    alt: 比卡logo图捏
+  name: "卡比~ & My Blog"
+  text: "记录一下我的笔记."
+  tagline: <p id="myTime">这是一个占位符~</p>
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 个人简历
+      link: https://huyipu.top
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 笔记
+      link: /neto
 
 features:
   - title: Feature A
+    icon: 🤖
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
+    icon: 🚀
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<script setup lang="ts">
+import {ref,onMounted} from 'vue'
+
+onMounted(()=>{
+  setInterval(()=>{
+    const date = new Date()
+    const year = date.getFullYear()
+    const month = date.getMonth() + 1
+    const day = date.getDate()
+    const hour = date.getHours()
+    const minute = date.getMinutes()
+    const second = date.getSeconds()
+    const time = `${year}年${month}月${day}日 ${hour}时${minute}分${second}秒`
+    document.getElementById('myTime')!.innerHTML = time
+  },1000)
+})
+</script>
