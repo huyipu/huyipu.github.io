@@ -8,7 +8,7 @@ hero:
     alt: 比卡logo图捏
   name: "卡比~ & My Blog"
   text: "记录一下我的笔记."
-  tagline: '<p id="myTime">这是一个占位符~</p>'
+  tagline: 这是一个占位符~
   actions:
     - theme: brand
       text: 个人简历
@@ -39,6 +39,7 @@ const conttt=ref('这是一个占位符~')
 setTimeout(()=>{
   conttt.value='欢迎来到我的博客~'
 },2000)
+
 onMounted(()=>{
   setInterval(()=>{
     const date = new Date()
@@ -49,10 +50,7 @@ onMounted(()=>{
     const minute = date.getMinutes()
     const second = date.getSeconds()
     const time = `${year}年${month}月${day}日 ${hour}时${minute}分${second}秒`
-    console.log(document.getElementById('myTime'))
-    if(document.getElementById('myTime')) {
-      document.getElementById('myTime').innerHTML = time
-    }
+    document.querySelector('.tagline')!.innerHTML = time
   },1000)
 })
 </script>
