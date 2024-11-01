@@ -32,6 +32,7 @@ hero:
 
 <div>{{conttt}}</div>
 
+
 <script setup lang="ts">
 import {ref,onMounted} from 'vue'
 const conttt=ref('这是一个占位符~')
@@ -60,3 +61,4 @@ onMounted(()=>{
     --vp-c-indigo-1:'#567bf3'!important;
   }
 </style>
+

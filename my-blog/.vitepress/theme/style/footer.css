@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.VPFooter {
+  padding: 12px !important;
+}
+
+@media (min-width: 768px) {
+  .VPFooter {
+    padding: 16px !important;
+  }
+}

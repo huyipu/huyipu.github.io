@@ -17,6 +17,18 @@ export default defineConfig({
   },
   //主题配置
   themeConfig: {
+    footer: {
+      message: `<div class="container">
+    <span class="text">
+      本站总访问量
+      <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
+    </span>
+    <span class="text">
+      本站访客数
+      <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+    </span>
+  </div>`,
+    },
     //头上角要主题切换的文字 Appearance
     darkModeSwitchLabel: "切换主题",
     // 文章翻页
