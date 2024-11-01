@@ -6,8 +6,22 @@ export default defineConfig({
   description:
     "在这里记录了我的个人笔记，因为治好了也流口水，所以要经常查询!!!",
   lang: "zh-CN",
+  locales: {
+    root: {
+      label: "简体中文",
+      lang: "zh-CN",
+    },
+  },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: "algolia",
+      options: {
+        appId: "S7N9RDYS3B",
+        apiKey: "1add670a8691502ca76dd7f770c46873",
+        indexName: "huyipuio",
+      },
+    },
+    logo: "/logo.svg",
     nav: [
       { text: "首页", link: "/" },
       { text: "笔记", link: "/note" },

@@ -17,7 +17,10 @@ hero:
       text: 笔记
       link: /neto
 
-features:
+
+---
+
+<!-- features:
   - title: Feature A
     icon: 🤖
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -25,12 +28,17 @@ features:
     icon: 🚀
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit -->
+
+<div>{{conttt}}</div>
 
 <script setup lang="ts">
 import {ref,onMounted} from 'vue'
+const conttt=ref('这是一个占位符~')
 
+setTimeout(()=>{
+  conttt.value='欢迎来到我的博客~'
+},2000)
 onMounted(()=>{
   setInterval(()=>{
     const date = new Date()
