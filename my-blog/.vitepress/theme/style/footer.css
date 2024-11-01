@@ -1,12 +1,18 @@
-.container {
+.footer-container {
   display: flex;
   justify-content: center;
-  gap: 10em;
+  gap: 5em;
 }
 
-.text {
+.footer-container .footer-container-text {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    gap: 10em;
+  }
 }
 
 .VPFooter {

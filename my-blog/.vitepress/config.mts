@@ -18,16 +18,16 @@ export default defineConfig({
   //主题配置
   themeConfig: {
     footer: {
-      message: `<div class="container">
-    <span class="text">
-      本站总访问量
-      <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
-    </span>
-    <span class="text">
-      本站访客数
-      <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
-    </span>
-  </div>`,
+      message: `<div class="footer-container">
+      <span class="footer-container-text">
+        本站总访问量
+        <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
+      </span>
+      <span class="footer-container-text">
+        本站访客数
+        <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+      </span>
+    </div>`,
     },
     //头上角要主题切换的文字 Appearance
     darkModeSwitchLabel: "切换主题",
@@ -52,7 +52,7 @@ export default defineConfig({
       //具体配置，vscode 可以ctrl + 鼠标左键点进去看具体的参数
       options: {
         appId: "S7N9RDYS3B",
-        apiKey: "1add670a8691502ca76dd7f770c46873",
+        apiKey: "1b3f9e5f7071232d57370d576553915f",
         indexName: "huyipuio",
         //搜索框的占位符  Search docs  是点搜索框里面显示的那个
         placeholder: "搜索笔记",
