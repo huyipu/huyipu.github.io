@@ -7,20 +7,59 @@ export default defineConfig({
     "在这里记录了我的个人笔记，因为治好了也流口水，所以要经常查询!!!",
   lang: "zh-CN",
   locales: {
-    root: {
+    "/": {
       label: "简体中文",
       lang: "zh-CN",
     },
   },
   themeConfig: {
+    //主题切换的文字
+    darkModeSwitchLabel: "切换主题",
     search: {
       provider: "algolia",
       options: {
         appId: "S7N9RDYS3B",
         apiKey: "1add670a8691502ca76dd7f770c46873",
         indexName: "huyipuio",
+        placeholder: "搜索笔记",
+        translations: {
+          button: { buttonText: "搜索笔记" },
+          modal: {
+            searchBox: {
+              resetButtonTitle: "清除查询条件",
+              resetButtonAriaLabel: "清除查询条件",
+              cancelButtonText: "取消",
+              cancelButtonAriaLabel: "取消",
+            },
+            startScreen: {
+              recentSearchesTitle: "搜索历史",
+              noRecentSearchesText: "没有搜索历史",
+              saveRecentSearchButtonTitle: "保存至搜索历史",
+              removeRecentSearchButtonTitle: "从搜索历史中移除",
+              favoriteSearchesTitle: "收藏",
+              removeFavoriteSearchButtonTitle: "从收藏中移除",
+            },
+            errorScreen: {
+              titleText: "无法获取结果",
+              helpText: "你可能需要检查你的网络连接",
+            },
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+              closeText: "关闭",
+              searchByText: "搜索提供者",
+            },
+            noResultsScreen: {
+              noResultsText: "无法找到相关结果",
+              suggestedQueryText: "你可以尝试查询",
+              reportMissingResultsText: "你认为该查询应该有结果？",
+              reportMissingResultsLinkText: "点击反馈",
+            },
+          },
+        },
       },
     },
+
     logo: "/logo.svg",
     nav: [
       { text: "首页", link: "/" },
