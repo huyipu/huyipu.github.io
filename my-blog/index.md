@@ -54,3 +54,9 @@ onMounted(()=>{
   },1000)
 })
 </script>
+
+<style scoped>
+  :root{
+    --vp-c-indigo-1:'#567bf3'!important;
+  }
+</style>

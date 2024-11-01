@@ -1,10 +1,13 @@
+//默认配置
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
+  //网站标题
   title: "卡比~ & My Blog",
+  //网站描述
   description:
     "在这里记录了我的个人笔记，因为治好了也流口水，所以要经常查询!!!",
+  //设置为中文，相当于html标签加lang="zh-CN"
   lang: "zh-CN",
   locales: {
     "/": {
@@ -12,18 +15,41 @@ export default defineConfig({
       lang: "zh-CN",
     },
   },
+  //主题配置
   themeConfig: {
-    //主题切换的文字
+    //头上角要主题切换的文字 Appearance
     darkModeSwitchLabel: "切换主题",
+    // 文章翻页
+    docFooter: {
+      prev: "上一篇", //Next page
+      next: "下一篇", //Previous page
+    },
+    //当前页面 On this page
+    outlineTitle: "页面内容",
+
+    // 返回顶部 Return to top
+    returnToTopLabel: "返回顶部",
+
+    // 菜单  Menu
+    sidebarMenuLabel: "菜单",
+
+    //下面这个是搜索相关，我用的是algolia，local也可以用
     search: {
+      //搜索用的啥引擎
       provider: "algolia",
+      //具体配置，vscode 可以ctrl + 鼠标左键点进去看具体的参数
       options: {
         appId: "S7N9RDYS3B",
         apiKey: "1add670a8691502ca76dd7f770c46873",
         indexName: "huyipuio",
+        //搜索框的占位符  Search docs  是点搜索框里面显示的那个
         placeholder: "搜索笔记",
+
         translations: {
+          //外面的搜索按钮  Search
           button: { buttonText: "搜索笔记" },
+
+          //这里就是点击导航栏上面的搜索弹出来的弹框  可以直接跟着改
           modal: {
             searchBox: {
               resetButtonTitle: "清除查询条件",
@@ -64,14 +90,22 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "笔记", link: "/note" },
+      {
+        text: "vitePress",
+        items: [
+          { text: "配置全中文", link: "/set-zh" },
+          { text: "美化样式", link: "/styles-note" },
+        ],
+      },
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        text: "vitePress",
+        collapsed: false,
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "配置全中文", link: "/set-zh" },
+          { text: "美化样式", link: "/styles-note" },
         ],
       },
     ],
