@@ -15,9 +15,9 @@ const nav: DefaultTheme.Config["nav"] = [
       },
       {
         text: "js",
-        link: "/js",
+        link: "/note/js",
       },
-      { text: "vue3", link: "/vue3" },
+      { text: "vue3", link: "/note/vue3" },
       { text: "react", link: "/react" },
       { text: "杂七杂八", link: "/7788" },
     ],

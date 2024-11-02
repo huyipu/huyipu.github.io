@@ -2,6 +2,16 @@ import type { DefaultTheme } from "vitepress";
 
 const sidebar: DefaultTheme.Config["sidebar"] = [
   {
+    text: "js",
+    collapsed: false,
+    items: [{ text: "ES6", link: "/note/js/ES6" }],
+  },
+  {
+    text: "vue3",
+    collapsed: false,
+    items: [{ text: "生命周期", link: "/note/vue3/生命周期" }],
+  },
+  {
     text: "vitePress",
     collapsed: false,
     items: [
