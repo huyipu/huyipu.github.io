@@ -15,31 +15,30 @@ hero:
       link: https://huyipu.top
     - theme: alt
       text: 笔记
-      link: /neto
+      link: /note
+
+features:
+  - title: 「代码海洋的探险家：每日学习，永不止步」🚀
+    icon: 📚
+    link: /
+    details: 我相信持续学习是保持技术领先的关键。无论新JavaScript框架还是UI/UX趋势，我都乐于探索。我将分享学习笔记、心得和编程技巧（主要是我记不住）。
+  - title: 「餐桌上的艺术：用美食点亮生活的色彩」🎨
+    icon: 🍽️
+    link: /
+    details: 美食！美食！美食！重要的事情说三遍~
+  - title: 「灵魂的守护者：烧香拜佛，心灵宁静的港湾」🌊
+    icon: 🙏
+    link: /
+    details: 在繁忙的生活中，找到心灵的宁静之源，保持一颗平和、感恩的心（持续性烧香拜佛）。
 ---
 
-<!-- features:
-  - title: Feature A
-    icon: 🤖
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    icon: 🚀
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit -->
-
-<div>{{conttt}}</div>
+<Confetti />
 
 <script setup lang="ts">
 import {ref,onMounted} from 'vue'
-const conttt=ref('这是一个占位符~')
-
-setTimeout(()=>{
-  conttt.value='欢迎来到我的博客~'
-},2000)
 
 const timerNum=ref(0)
-const timer=ref(null) 
+const timer=ref(null)
 
 onMounted(()=>{
   timer.value=setInterval(()=>{
@@ -56,16 +55,16 @@ onMounted(()=>{
       dom.innerHTML = time
     }else{
       timerNum.value+=1
-      if(timerNum.value>5){
-        clearInterval(timer.value)
-        timer.value=null
-      }
+    if(timerNum.value>5){
+      clearInterval(timer.value)
+      timer.value=null
+    }
     }
   },1000)
 })
 </script>
 
-<style scoped>
+<style module>
   :root{
     --vp-c-indigo-1:'#567bf3'!important;
   }

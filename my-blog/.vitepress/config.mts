@@ -1,5 +1,6 @@
 //默认配置
 import { defineConfig } from "vitepress";
+import { nav, sidebar } from "./configs";
 
 export default defineConfig({
   //网站标题
@@ -9,6 +10,7 @@ export default defineConfig({
     "在这里记录了我的个人笔记，因为治好了也流口水，所以要经常查询!!!",
   //设置为中文，相当于html标签加lang="zh-CN"
   lang: "zh-CN",
+  srcDir: "docs",
   locales: {
     "/": {
       label: "简体中文",
@@ -17,18 +19,23 @@ export default defineConfig({
   },
   //主题配置
   themeConfig: {
-    footer: {
-      message: `<span class="footer-container">
-      <span class="footer-container-text">
-        本站总访问量
-        <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
-      </span>
-      <span class="footer-container-text">
-        本站访客数
-        <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
-      </span>
-    </span>`,
-    },
+    //主导航
+    nav,
+
+    //侧边导航
+    sidebar,
+    // footer: {
+    //   message: `<span class="footer-container">
+    //   <span class="footer-container-text">
+    //     本站总访问量
+    //     <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
+    //   </span>
+    //   <span class="footer-container-text">
+    //     本站访客数
+    //     <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+    //   </span>
+    // </span>`,
+    // },
     //头上角要主题切换的文字 Appearance
     darkModeSwitchLabel: "切换主题",
     // 文章翻页
@@ -99,28 +106,6 @@ export default defineConfig({
     },
 
     logo: "/logo.svg",
-    nav: [
-      { text: "首页", link: "/" },
-      { text: "笔记", link: "/note" },
-      {
-        text: "vitePress",
-        items: [
-          { text: "配置全中文", link: "/set-zh" },
-          { text: "美化样式", link: "/styles-note" },
-        ],
-      },
-    ],
-
-    sidebar: [
-      {
-        text: "vitePress",
-        collapsed: false,
-        items: [
-          { text: "配置全中文", link: "/set-zh" },
-          { text: "美化样式", link: "/styles-note" },
-        ],
-      },
-    ],
 
     notFound: {
       title: "页面未找到",
@@ -139,6 +124,7 @@ export default defineConfig({
   },
 
   head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
     [
       "script",
       {},
