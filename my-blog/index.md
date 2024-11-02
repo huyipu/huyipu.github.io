@@ -16,8 +16,6 @@ hero:
     - theme: alt
       text: 笔记
       link: /neto
-
-
 ---
 
 <!-- features:
@@ -32,7 +30,6 @@ hero:
 
 <div>{{conttt}}</div>
 
-
 <script setup lang="ts">
 import {ref,onMounted} from 'vue'
 const conttt=ref('这是一个占位符~')
@@ -41,8 +38,11 @@ setTimeout(()=>{
   conttt.value='欢迎来到我的博客~'
 },2000)
 
+const timerNum=ref(0)
+const timer=ref(null) 
+
 onMounted(()=>{
-  setInterval(()=>{
+  timer.value=setInterval(()=>{
     const date = new Date()
     const year = date.getFullYear()
     const month = date.getMonth() + 1
@@ -51,7 +51,16 @@ onMounted(()=>{
     const minute = date.getMinutes()
     const second = date.getSeconds()
     const time = `${year}年${month}月${day}日 ${hour}时${minute}分${second}秒`
-    document.querySelector('.tagline')!.innerHTML = time
+    const dom = document.querySelector('.tagline')
+    if(dom){
+      dom.innerHTML = time
+    }else{
+      timerNum.value+=1
+      if(timerNum.value>5){
+        clearInterval(timer.value)
+        timer.value=null
+      }
+    }
   },1000)
 })
 </script>
@@ -61,4 +70,3 @@ onMounted(()=>{
     --vp-c-indigo-1:'#567bf3'!important;
   }
 </style>
-

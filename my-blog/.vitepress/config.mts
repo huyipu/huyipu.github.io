@@ -18,7 +18,7 @@ export default defineConfig({
   //主题配置
   themeConfig: {
     footer: {
-      message: `<div class="footer-container">
+      message: `<span class="footer-container">
       <span class="footer-container-text">
         本站总访问量
         <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
@@ -27,7 +27,7 @@ export default defineConfig({
         本站访客数
         <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
       </span>
-    </div>`,
+    </span>`,
     },
     //头上角要主题切换的文字 Appearance
     darkModeSwitchLabel: "切换主题",
@@ -37,7 +37,7 @@ export default defineConfig({
       next: "下一篇", //Previous page
     },
     //当前页面 On this page
-    outlineTitle: "页面内容",
+    outlineTitle: "页面大纲",
 
     // 返回顶部 Return to top
     returnToTopLabel: "返回顶部",
