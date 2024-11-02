@@ -4,11 +4,13 @@ outline: deep
 
 # 设置中文
 
+<ArticleMetadata />
+
 :::tip 说明
-本页面所有设置都可以在config.mts里面的提示找到，为了方便写在这里。
+本页面所有设置都可以在 config.mts 里面的提示找到，为了方便写在这里。
 :::
 
-* 直接贴一下我的config.mts里面的设置，我注释打上原来的英语方便找。
+- 直接贴一下我的 config.mts 里面的设置，我注释打上原来的英语方便找。
 
 ```ts
 //默认配置
@@ -105,7 +107,7 @@ export default defineConfig({
     ],
 
     sidebar: [
-     //侧导航配置忽略
+      //侧导航配置忽略
     ],
 
     //404页面的配置
@@ -116,7 +118,6 @@ export default defineConfig({
     },
   },
 });
-
 ```
 
-<LastUpdated time="2024/11/1 16:00:31"/>
+<LastUpdated time="2024/11/1 15:13:20"/>

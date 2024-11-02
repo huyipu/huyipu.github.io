@@ -1,6 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import LastUpdated from "../components/Footer/LastUpdated.vue";
 import Confetti from "../components/Confetti.vue";
+import ArticleMetadata from "../components/Head/ArticleMetadata.vue";
 import { inBrowser } from "vitepress";
 import busuanzi from "busuanzi.pure.js";
 import MyLayout from "./MyLayout.vue";
@@ -12,6 +13,7 @@ export default {
   enhanceApp({ app, router }) {
     app.component("LastUpdated", LastUpdated);
     app.component("Confetti", Confetti);
+    app.component("ArticleMetadata", ArticleMetadata);
     if (inBrowser) {
       router.onAfterRouteChanged = () => {
         busuanzi.fetch();

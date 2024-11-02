@@ -4,6 +4,8 @@ outline: deep
 
 # 样式笔记
 
+<ArticleMetadata />
+
 :::tip 说明
 本页面所有样式出自 [VitePress | 快速上手中文教程](https://vitepress.yiov.top/style.html)
 :::
@@ -127,4 +129,4 @@ yarn -v
 
 :::
 
-<LastUpdated time="2024/11/1 16:00:31"/>
+<LastUpdated time="2024/11/1 12:00:31"/>
