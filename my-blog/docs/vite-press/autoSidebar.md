@@ -8,7 +8,7 @@ order: 5
 <ArticleMetadata />
 
 :::tip 说明
-本文介绍如何使用[vitepress-sidebar]('https://vitepress-sidebar.cdget.com/zhHans/')实现自动生成侧边栏。
+本文介绍如何使用[vitepress-sidebar](https://vitepress-sidebar.cdget.com/zhHans/)实现自动生成侧边栏。
 :::
 
 ## 背景

@@ -34,7 +34,7 @@ export default defineConfig({
 
 ## Algolia 搜索
 
-- Algolia 搜索需要先去官网申请一下，地址是: [https://docsearch.algolia.com/apply/]('https://docsearch.algolia.com/apply/')，填写自己的邮箱，通过之后会发邮件到你的邮箱，成功申请之后用申请的邮箱账号登录，会看到一个默认的爬虫，如下：
+- Algolia 搜索需要先去官网申请一下，地址是: [https://docsearch.algolia.com/apply/](https://docsearch.algolia.com/apply/)，填写自己的邮箱，通过之后会发邮件到你的邮箱，成功申请之后用申请的邮箱账号登录，会看到一个默认的爬虫，如下：
 
 ![爬虫](/search/algolia_1.png)
 
@@ -91,7 +91,7 @@ export default defineConfig({
 
 ## 定时自动爬取
 
-- 如果你的文档更新了，Algolia 搜索的索引没有更新，你可以点击爬虫旁边的 Crawl 按钮进行手动爬取，但是这样太麻烦了，我们可以设置定时自动爬取，返回到配置页面，也就是 Editor，在配置里加上定时爬取的配置，参考 [官方文档 schedule 参数说明]('https://www.algolia.com/doc/tools/crawler/apis/configuration/schedule/')，如下：
+- 如果你的文档更新了，Algolia 搜索的索引没有更新，你可以点击爬虫旁边的 Crawl 按钮进行手动爬取，但是这样太麻烦了，我们可以设置定时自动爬取，返回到配置页面，也就是 Editor，在配置里加上定时爬取的配置，参考 [官方文档 schedule 参数说明](https://www.algolia.com/doc/tools/crawler/apis/configuration/schedule/)，如下：
 
 ```md
 schedule: "every 1 day at 3:00 pm",
