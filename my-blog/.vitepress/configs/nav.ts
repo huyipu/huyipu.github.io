@@ -27,6 +27,7 @@ const nav: DefaultTheme.Config["nav"] = [
     items: [
       { text: "配置全中文", link: "/vite-press/set-zh" },
       { text: "美化样式", link: "/vite-press/styles-note" },
+      { text: "添加搜索", link: "/vite-press/search" },
     ],
   },
 ];

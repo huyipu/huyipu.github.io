@@ -1,6 +1,8 @@
 //默认配置
 import { defineConfig } from "vitepress";
 import { nav, sidebar } from "./configs";
+import { set_sidebar } from "./untils/setSidebar.mjs";
+import { generateSidebar } from "vitepress-sidebar";
 
 export default defineConfig({
   //网站标题
@@ -23,7 +25,19 @@ export default defineConfig({
     nav,
 
     //侧边导航
-    sidebar,
+    // sidebar,
+    sidebar: generateSidebar({
+      documentRootPath: "/my-blog/docs",
+      //使用h1的标题作为侧边栏的标题
+      useTitleFromFileHeading: true,
+      //使用文件夹的index.md作为标题
+      useFolderTitleFromIndexFile: true,
+      //指向文件夹的链接
+      // useFolderLinkFromIndexFile: true,
+      sortFolderTo: "top",
+      collapsed: false,
+    }),
+    // sidebar: { "/": set_sidebar("/my-blog/docs") },
     // footer: {
     //   message: `<span class="footer-container">
     //   <span class="footer-container-text">
