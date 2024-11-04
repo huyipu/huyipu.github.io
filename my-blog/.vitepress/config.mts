@@ -1,7 +1,6 @@
 //默认配置
 import { defineConfig } from "vitepress";
 import { nav, sidebar } from "./configs";
-import { set_sidebar } from "./untils/setSidebar.mjs";
 import { generateSidebar } from "vitepress-sidebar";
 
 export default defineConfig({
@@ -33,7 +32,8 @@ export default defineConfig({
       //使用文件夹的index.md作为标题
       useFolderTitleFromIndexFile: true,
       //指向文件夹的链接
-      // useFolderLinkFromIndexFile: true,
+      useFolderLinkFromIndexFile: true,
+      sortMenusByFrontmatterOrder: true,
       sortFolderTo: "top",
       collapsed: false,
     }),

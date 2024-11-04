@@ -18,9 +18,10 @@ const props = defineProps({
 <style scoped>
 .last-updated {
   display: flex;
-  margin-bottom: -60px;
+  margin-bottom: -40px;
   justify-content: flex-end;
   padding: 16px 0;
+  padding-top: 30px;
   color: rgba(60, 60, 67, 0.78);
   font-weight: 500;
 }

@@ -2,6 +2,7 @@
 .marker-evy {
   white-space: nowrap;
   position: relative;
+  cursor: pointer;
 }
 
 .marker-evy:after {

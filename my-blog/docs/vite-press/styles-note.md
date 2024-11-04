@@ -1,8 +1,9 @@
 ---
 outline: deep
+order: 2
 ---
 
-# 样式笔记
+# 美化样式
 
 <ArticleMetadata />
 
@@ -129,4 +130,4 @@ yarn -v
 
 :::
 
-<LastUpdated time="2024/11/1 12:00:31"/>
+<LastUpdated time="2024/11/1 14:40:13"/>

@@ -1,14 +1,14 @@
 ---
 outline: deep
-order: 3
+order: 200
 ---
 
-# js
+# 杂七杂八
 
 <ArticleMetadata />
 
-```md
-> 这里准备写一下关于 JS 的笔记
-```
+:::tip 简介
+这是 杂七杂八 的有关内容。
+:::
 
 <LastUpdated time="2024/11/1 16:00:31"/>

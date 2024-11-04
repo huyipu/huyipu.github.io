@@ -3,12 +3,12 @@ outline: deep
 order: 1
 ---
 
-# 生命周期
+# html5
 
 <ArticleMetadata />
 
-```md
-> 这里准备写一下关于 Vue3 的生命周期 的笔记
-```
+:::tip 简介
+这是 html5 的有关内容。
+:::
 
 <LastUpdated time="2024/11/1 16:00:31"/>
