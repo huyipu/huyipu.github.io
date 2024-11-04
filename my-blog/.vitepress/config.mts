@@ -36,6 +36,7 @@ export default defineConfig({
       sortMenusByFrontmatterOrder: true,
       sortFolderTo: "top",
       collapsed: false,
+      collapseDepth: 2,
     }),
     // sidebar: { "/": set_sidebar("/my-blog/docs") },
     // footer: {
