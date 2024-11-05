@@ -25,9 +25,14 @@ const nav: DefaultTheme.Config["nav"] = [
   {
     text: "vitePress",
     items: [
-      { text: "添加搜索", link: "/vite-press/search" },
-      { text: "美化样式", link: "/vite-press/styles-note" },
-      { text: "设置中文", link: "/vite-press/set-zh" },
+      { text: "简介", link: "/VitePress/快速上手/VitePress简介" },
+      { text: "添加搜索", link: "/VitePress/快速上手/给VitePress添加搜索" },
+      { text: "美化样式", link: "/VitePress/快速上手/美化VitePress默认样式" },
+      { text: "设置中文", link: "/VitePress/快速上手/VitePress设置中文" },
+      {
+        text: "自动侧边栏",
+        link: "/VitePress/快速上手/VitePress设置自动侧边栏",
+      },
     ],
   },
 ];

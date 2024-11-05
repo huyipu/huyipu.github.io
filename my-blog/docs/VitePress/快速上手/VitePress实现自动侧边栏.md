@@ -3,7 +3,7 @@ outline: deep
 order: 5
 ---
 
-# 自动侧边栏
+# VitePress实现自动侧边栏
 
 <ArticleMetadata />
 

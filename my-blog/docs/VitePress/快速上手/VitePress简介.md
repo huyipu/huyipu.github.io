@@ -1,9 +1,9 @@
 ---
 outline: deep
-order: 2
+order: 1
 ---
 
-# VitePress
+# VitePress简介
 
 <ArticleMetadata />
 

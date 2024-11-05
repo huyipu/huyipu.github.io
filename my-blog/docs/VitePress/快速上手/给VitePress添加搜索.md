@@ -1,9 +1,9 @@
 ---
 outline: deep
-order: 1
+order: 4
 ---
 
-# 添加搜索
+# 给VitePress添加搜索
 
 <ArticleMetadata />
 

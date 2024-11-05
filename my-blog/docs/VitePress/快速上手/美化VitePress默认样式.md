@@ -3,7 +3,7 @@ outline: deep
 order: 2
 ---
 
-# 美化样式
+# 美化VitePress默认样式
 
 <ArticleMetadata />
 
