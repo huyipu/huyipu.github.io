@@ -7,19 +7,19 @@ const nav: DefaultTheme.Config["nav"] = [
     items: [
       {
         text: "html5",
-        link: "/note/html5",
+        link: "/note/html5/html5-简介/html5-简介.html",
       },
       {
         text: "css3",
-        link: "/note/css3",
+        link: "/note/css3/css3-简介/css3-简介.html",
       },
       {
         text: "js",
         link: "/note/js",
       },
-      { text: "vue3", link: "/note/vue3" },
-      { text: "react", link: "/note/react" },
-      { text: "杂七杂八", link: "/7788" },
+      { text: "vue3", link: "/note/vue3/vue-概述/vue-概述.html" },
+      { text: "react", link: "/note/react/react-介绍/react-介绍.html" },
+      { text: "杂七杂八", link: "/7788/杂七杂八/一些杂项.html" },
     ],
   },
   {

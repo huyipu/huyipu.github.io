@@ -19,6 +19,20 @@ const publicObj = {
 
 //设置侧边栏
 const setSidebars: VitePressSidebarOptions[] = [
+  // html5
+  {
+    ...publicObj,
+    scanStartPath: "note/html5",
+    basePath: "/note/html5/",
+    resolvePath: "/note/html5/",
+  },
+  // css3
+  {
+    ...publicObj,
+    scanStartPath: "note/css3",
+    basePath: "/note/css3/",
+    resolvePath: "/note/css3/",
+  },
   // vue
   {
     ...publicObj,
@@ -44,8 +58,8 @@ const setSidebars: VitePressSidebarOptions[] = [
   {
     ...publicObj,
     scanStartPath: "7788",
-    basePath: "/7788",
-    resolvePath: "/7788",
+    basePath: "/7788/",
+    resolvePath: "/7788/",
   },
 ];
 
