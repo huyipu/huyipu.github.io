@@ -1,9 +1,9 @@
 ---
 outline: deep
-order: 3
+order: 4
 ---
 
-# VitePress设置中文
+# VitePress 设置中文
 
 <ArticleMetadata />
 

@@ -7,18 +7,18 @@ const nav: DefaultTheme.Config["nav"] = [
     items: [
       {
         text: "html5",
-        link: "/note/html5/html5-简介/html5-简介.html",
+        link: "/note/html5/html5/html5-概述.html",
       },
       {
         text: "css3",
-        link: "/note/css3/css3-简介/css3-简介.html",
+        link: "/note/css3/css3/css3-概述.html",
       },
       {
         text: "js",
         link: "/note/js",
       },
-      { text: "vue3", link: "/note/vue3/vue-概述/vue-概述.html" },
-      { text: "react", link: "/note/react/react-介绍/react-介绍.html" },
+      { text: "vue3", link: "/note/vue3/vue/vue-概述.html" },
+      { text: "react", link: "/note/react/react/react-介绍.html" },
       { text: "杂七杂八", link: "/7788/杂七杂八/一些杂项.html" },
     ],
   },
@@ -26,12 +26,12 @@ const nav: DefaultTheme.Config["nav"] = [
     text: "vitePress",
     items: [
       { text: "简介", link: "/VitePress/快速上手/VitePress简介" },
-      { text: "添加搜索", link: "/VitePress/快速上手/给VitePress添加搜索" },
       { text: "美化样式", link: "/VitePress/快速上手/美化VitePress默认样式" },
+      { text: "添加搜索", link: "/VitePress/快速上手/给VitePress添加搜索" },
       { text: "设置中文", link: "/VitePress/快速上手/VitePress设置中文" },
       {
         text: "自动侧边栏",
-        link: "/VitePress/快速上手/VitePress设置自动侧边栏",
+        link: "/VitePress/快速上手/VitePress实现自动侧边栏",
       },
     ],
   },
