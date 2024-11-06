@@ -4,11 +4,11 @@ import type { VitePressSidebarOptions } from "vitepress-sidebar";
 const publicObj = {
   documentRootPath: "/my-blog/docs",
   //使用h1的标题作为侧边栏的标题
-  // useTitleFromFileHeading: true,
+  useTitleFromFileHeading: true,
   //使用文件夹的index.md作为标题
   useFolderTitleFromIndexFile: true,
   //指向文件夹的链接
-  useFolderLinkFromIndexFile: true,
+  // useFolderLinkFromIndexFile: true,
   sortMenusByFrontmatterOrder: true,
   sortFolderTo: "top",
   collapsed: false,
@@ -46,6 +46,13 @@ const setSidebars: VitePressSidebarOptions[] = [
     scanStartPath: "note/react",
     basePath: "/note/react/",
     resolvePath: "/note/react/",
+  },
+  // js
+  {
+    ...publicObj,
+    scanStartPath: "note/js",
+    basePath: "/note/js/",
+    resolvePath: "/note/js/",
   },
   // VitePress
   {

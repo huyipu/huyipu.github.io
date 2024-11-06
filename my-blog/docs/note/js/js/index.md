@@ -1,14 +1,14 @@
 ---
 outline: deep
-order: 5
+order: 1
 ---
 
-# 本地存储
+# js
 
 <ArticleMetadata />
 
-:::tip 简介
-这是 本地存储 的有关内容。
-:::
+```md
+> 这里准备写一下关于 JS 的笔记
+```
 
 <LastUpdated time="2024/11/1 16:00:31"/>
