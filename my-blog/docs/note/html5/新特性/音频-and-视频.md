@@ -23,7 +23,7 @@ html5 新增了对于音频和视频原生的支持，通过`<audio>`和`<video>
 ```
 
 <audio controls autoplay>  
-  <source src="/audio.mp3" type="audio/mpeg">  
+  <source src="https://huyipu.top/files/audio.mp3" type="audio/mpeg">  
   您的浏览器不支持 audio 元素。  
 </audio>
 
@@ -50,7 +50,7 @@ html5 新增了对于音频和视频原生的支持，通过`<audio>`和`<video>
 ```
 
 <video width="640" height="360" controls>
-  <source src="/video.mp4" type="video/mp4" />
+  <source src="https://huyipu.top/files/video.mp4" type="video/mp4" />
   您的浏览器不支持 video 元素。
 </video>
 
