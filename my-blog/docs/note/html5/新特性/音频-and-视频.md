@@ -22,7 +22,7 @@ html5 新增了对于音频和视频原生的支持，通过`<audio>`和`<video>
 </audio>
 ```
 
-<audio controls autoplay>  
+<audio controls >  
   <source src="https://huyipu.top/files/audio.mp3" type="audio/mpeg">  
   您的浏览器不支持 audio 元素。  
 </audio>
@@ -49,7 +49,7 @@ html5 新增了对于音频和视频原生的支持，通过`<audio>`和`<video>
 </video>
 ```
 
-<video width="640" height="360" controls>
+<video controls>
   <source src="https://huyipu.top/files/video.mp4" type="video/mp4" />
   您的浏览器不支持 video 元素。
 </video>
@@ -65,6 +65,5 @@ html5 新增了对于音频和视频原生的支持，通过`<audio>`和`<video>
 - `muted`：静音播放视频。
 - `preload`：预加载视频数据（可选值：auto、metadata 或 none）。
 - `poster`：视频加载前的占位图。
-- `width`和`height`：设置视频的宽度和高度。
 
 <LastUpdated time="2024/11/5 22:40:11"/>
