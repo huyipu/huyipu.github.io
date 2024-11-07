@@ -123,6 +123,10 @@ export default defineConfig({
         },
         link: "https://huyipu.top",
       },
+      {
+        icon: "github",
+        link: "https://github.com/huyipu/huyipu.github.io",
+      },
     ],
   },
 

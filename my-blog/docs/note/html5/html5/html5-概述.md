@@ -38,4 +38,6 @@ html5 为了更好的语义化新增了很多标签，常用的有以下标签�
 8. <footer>	定义 section 或 document 的页脚
 ```
 
+![语义化图](https://www.runoob.com/wp-content/uploads/2013/07/html5-layout.jpg)
+
 <LastUpdated time="2024/11/5 21:14:41"/>

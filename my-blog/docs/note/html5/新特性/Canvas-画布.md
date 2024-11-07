@@ -120,6 +120,8 @@ img.onload = function() {
 
 <canvas id="myCanvas5" width="400" height="200"></canvas>
 
+- 恭喜你！🥳你已经学会`canvas`的基础用法啦~ 现在尝试使用`canvas`制作小游戏吧🐶
+
 <LastUpdated time="2024/11/6 16:48:18"/>
 
 <script setup>
