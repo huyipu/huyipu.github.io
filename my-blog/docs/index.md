@@ -14,8 +14,20 @@ hero:
       text: 个人简历
       link: https://huyipu.top
     - theme: alt
-      text: 笔记
-      link: /note
+      text: html5
+      link: /note/html5/html5/html5-概述.html
+    - theme: alt
+      text: css3
+      link: /note/css3/css3/css3-概述.html
+    - theme: alt
+      text: vue3
+      link: /note/vue3/vue/vue-概述.html
+    - theme: alt
+      text: react
+      link: /note/react/react/react-介绍.html
+    - theme: alt
+      text: vitepress
+      link: /VitePress/快速上手/VitePress简介.html
 
 features:
   - title: 「代码海洋的探险家：每日学习，永不止步」🚀
