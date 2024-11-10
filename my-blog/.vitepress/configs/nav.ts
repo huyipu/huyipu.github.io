@@ -14,8 +14,8 @@ const nav: DefaultTheme.Config["nav"] = [
         link: "/note/css3/css3/css3-概述.html",
       },
       {
-        text: "js",
-        link: "/note/js/js/js-概述.html",
+        text: "es6",
+        link: "/note/es6/es6/es6-概述.html",
       },
       { text: "vue3", link: "/note/vue3/vue/vue-概述.html" },
       { text: "react", link: "/note/react/react/react-介绍.html" },

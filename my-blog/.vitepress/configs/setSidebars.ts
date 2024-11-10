@@ -50,9 +50,9 @@ const setSidebars: VitePressSidebarOptions[] = [
   // js
   {
     ...publicObj,
-    scanStartPath: "note/js",
-    basePath: "/note/js/",
-    resolvePath: "/note/js/",
+    scanStartPath: "note/es6",
+    basePath: "/note/es6/",
+    resolvePath: "/note/es6/",
   },
   // VitePress
   {
